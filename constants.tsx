@@ -3,6 +3,9 @@ import { Test } from './types';
 
 export const CLASSES = ['6', '7', '8', '9', '10'];
 
+// अपनी Blogger वेबसाइट का लिंक यहाँ डालें
+export const BLOG_URL = "https://yourblogname.blogspot.com";
+
 export const SUBJECTS = [
   { id: 'math', name: 'गणित (Math)', icon: '📐' },
   { id: 'science', name: 'विज्ञान (Science)', icon: '🔬' },

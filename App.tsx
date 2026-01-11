@@ -5,6 +5,7 @@ import Dashboard from './components/Dashboard';
 import TestInterface from './components/TestInterface';
 import ResultView from './components/ResultView';
 import AdminPanel from './components/AdminPanel';
+import { BLOG_URL } from './constants';
 
 enum View {
   DASHBOARD,
@@ -49,8 +50,8 @@ const App: React.FC = () => {
               </div>
               <div className="hidden md:flex gap-6 text-gray-600 font-medium hindi-text">
                 <button onClick={() => setCurrentView(View.DASHBOARD)} className="hover:text-indigo-600">होम</button>
+                <a href={BLOG_URL} target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600">मुख्य वेबसाइट</a>
                 <button onClick={() => setCurrentView(View.ADMIN)} className="hover:text-indigo-600 text-orange-600 font-bold">प्रश्न बैंक (Admin)</button>
-                <button className="hover:text-indigo-600">अभ्यास</button>
               </div>
               <div className="flex items-center gap-4">
                 <button onClick={() => setCurrentView(View.ADMIN)} className="bg-orange-50 text-orange-600 px-4 py-2 rounded-lg font-bold hindi-text border border-orange-100">एडमिन</button>
@@ -108,6 +109,7 @@ const App: React.FC = () => {
         <div className="max-w-6xl mx-auto px-4 text-center text-gray-500">
           <p className="hindi-text font-bold text-gray-800 mb-2">परीक्षा सारथी (Pariksha Sarathi)</p>
           <p className="hindi-text text-sm">© 2024 आपके कोचिंग के लिए समर्पित। सभी अधिकार सुरक्षित।</p>
+          <a href={BLOG_URL} target="_blank" rel="noopener noreferrer" className="text-indigo-500 text-xs mt-2 inline-block">हमारी वेबसाइट पर जाएँ</a>
         </div>
       </footer>
     </div>
